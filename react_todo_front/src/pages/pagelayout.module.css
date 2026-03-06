@@ -1,0 +1,8 @@
+.page {
+  width: 800px;
+  margin: 20px auto;
+}
+.page_title {
+  color: var(--color1);
+  text-align: center;
+}
