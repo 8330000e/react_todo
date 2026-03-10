@@ -11,6 +11,7 @@ const Header = () => {
         <nav className={style.nav}>
           <Link to="/regist">할일등록</Link>
           <Link to="#">메뉴2</Link>
+          <Link to="/sensor">IoT모니터링</Link>
         </nav>
       </div>
     </header>
