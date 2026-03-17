@@ -3,7 +3,7 @@ import Header from "./components/commons/Header";
 import TodoListPage from "./pages/TodoListPage";
 import { Route, Routes } from "react-router-dom";
 import TodoRegistPage from "./pages/TodoRegistPage";
-import TodoViewPage from "./pages/TodoViewPate";
+import TodoViewPage from "./pages/TodoViewPage";
 import TodoEditPage from "./pages/TodoEditPage";
 import Sensor from "./components/rasp/Sensor";
 

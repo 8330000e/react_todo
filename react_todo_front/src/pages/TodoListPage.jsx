@@ -5,7 +5,6 @@ import TodoList from "../components/todo/TodoList";
 
 const TodoListPage = () => {
   const [todoList, setTodoList] = useState([]);
-  const [todo, setTodo] = useState("");
   const backServer = import.meta.env.VITE_BACKSERVER;
   useEffect(() => {
     axios

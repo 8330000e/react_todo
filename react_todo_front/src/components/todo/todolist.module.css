@@ -48,3 +48,26 @@ body {
   background-color: #aaa;
   color: #fff;
 }
+.detail_content {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.detail_content > li {
+  display: flex;
+  flex-direction: column;
+}
+.detail_btns {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+.detail_btns > button {
+  flex-grow: 1;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  background-color: var(--color1);
+  border-radius: 8px;
+}

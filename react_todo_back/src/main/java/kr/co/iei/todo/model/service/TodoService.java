@@ -25,7 +25,7 @@ public class TodoService {
 		return result;
 	}
 
-	public Todo selectOneTodo(int todoNo) {
+	public Todo selectOneTodo(Integer todoNo) {
 		Todo todo = todoDao.selectOneTodo(todoNo);
 		return todo;
 	}

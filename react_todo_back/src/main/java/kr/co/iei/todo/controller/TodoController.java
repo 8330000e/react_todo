@@ -35,7 +35,7 @@ public class TodoController {
 	}
 	
 	@GetMapping(value="/{todoNo}")
-	public ResponseEntity<?> selectOneTodo(@PathVariable int todoNo){
+	public ResponseEntity<?> selectOneTodo(@PathVariable Integer todoNo){
 		Todo todo = todoService.selectOneTodo(todoNo);
 		return ResponseEntity.ok(todo);
 	}
