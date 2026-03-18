@@ -29,4 +29,14 @@ public class TodoService {
 		Todo todo = todoDao.selectOneTodo(todoNo);
 		return todo;
 	}
+
+	public int deleteTodo(Integer todoNo) {
+		int result = todoDao.deleteTodo(todoNo);
+		return result;
+	}
+
+	public int updateTodo(Todo todo) {
+		int result = todoDao.updateTodo(todo);
+		return result;
+	}
 }

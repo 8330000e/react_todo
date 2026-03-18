@@ -17,6 +17,7 @@ function App() {
         <Route path="/" element={<TodoListPage />} />
         <Route path="/regist" element={<TodoRegistPage />} />
         <Route path="/detail/:todoNo" element={<TodoViewPage />} />
+        <Route path="/edit/:todoNo" element={<TodoEditPage />} />
         <Route path="/sensor" element={<Sensor />} />
       </Routes>
     </div>

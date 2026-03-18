@@ -1,5 +1,5 @@
 .list {
-  margin-top: 32px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -48,11 +48,24 @@ body {
   background-color: #aaa;
   color: #fff;
 }
+.detail_wrap {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+.detail_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #aaa;
+}
 .detail_content {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 20px;
 }
 .detail_content > li {
   display: flex;
@@ -62,7 +75,9 @@ body {
   display: flex;
   gap: 12px;
   justify-content: space-between;
+  padding: 20px;
 }
+.detail_btns > a,
 .detail_btns > button {
   flex-grow: 1;
   border: none;
@@ -70,4 +85,7 @@ body {
   color: #fff;
   background-color: var(--color1);
   border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
 }

@@ -15,4 +15,8 @@ public interface TodoDao {
 
 	Todo selectOneTodo(Integer todoNo);
 
+	int deleteTodo(Integer todoNo);
+
+	int updateTodo(Todo todo);
+
 }

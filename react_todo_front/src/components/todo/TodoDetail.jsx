@@ -1,9 +1,27 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./todolist.module.css";
 import { useState } from "react";
 import axios from "axios";
 
 const TodoDetail = ({ todo }) => {
+  const navigate = useNavigate();
+  const deleteTodo = () => {
+    const real = confirm("해당 TODO를 삭제하시겠습니까?");
+    if (real) {
+      axios
+        .delete(`${import.meta.env.VITE_BACKSERVER}/todos/${todo.todoNo}`)
+        .then((res) => {
+          console.log(res);
+          if (res.data === 1) {
+            navigate("/");
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  };
+
   return (
     <div className={styles.detail_wrap}>
       <div className={styles.detail_info}>
@@ -27,8 +45,10 @@ const TodoDetail = ({ todo }) => {
         </li>
       </ul>
       <div className={styles.detail_btns}>
-        <button>수정</button>
-        <button>삭제</button>
+        <Link to={`/edit/${todo.todoNo}`} todo={todo}>
+          수정
+        </Link>
+        <button onClick={deleteTodo}>삭제</button>
       </div>
     </div>
   );

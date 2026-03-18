@@ -10,4 +10,10 @@
 	<select id="selectOneTodo" resultType="todo">
 		select * from todo_tbl where todo_no = #{todoNo}
 	</select>
+	<delete id="deleteTodo">
+		delete from todo_tbl where todo_no = #{todoNo}
+	</delete>
+	<update id="updateTodo">
+		update todo_tbl set todo_content = #{todoWriter} where todo_no = #{todoNo}
+	</update>
 </mapper>
