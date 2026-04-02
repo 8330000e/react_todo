@@ -28,7 +28,7 @@ const TodoModify = ({ todo, setTodo }) => {
   };
 
   return (
-    <form onSubmit={submit} className={styles.form}>
+    <form onSubmit={submit} className={styles.form} onChange={inputTodo}>
       <div className={styles.input_wrap}>
         <label htmlFor="todoWriter">작성자</label>
         <input
@@ -36,7 +36,6 @@ const TodoModify = ({ todo, setTodo }) => {
           id="todoWriter"
           name="todoWriter"
           value={todo.todoWriter}
-          onChange={inputTodo}
         />
       </div>
       <div className={styles.input_wrap}>
